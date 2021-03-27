@@ -109,10 +109,80 @@ header {
 .about {
   position: relative;
   height: 60.7223vmax;
-  margin-top: 6.9445vw;
+  margin-top: 8.9445vw;
   margin-left: 10.41667vw;
   margin-right: 10.41667vw;
 }
+
+@media (min-width:1440px) {
+  .about{
+    margin-top: 8.9445vw ;
+    margin-left: 11.41667vw;
+    margin-right: 11.41667vw;
+  }
+}
+
+.snap{
+  position: absolute;
+  left: 41.6672vmax;
+/* background: blue; */
+  width: 34.7227vmax;
+  height: 34.7227vmax;
+}
+
+@media (max-width:1024px) {
+  .snap {
+  left: 49.6672vmax;
+  }
+}
+
+@media (max-width:768px) {
+  .snap {
+  left: 59.6672vmax;
+  }
+}
+
+@media (max-width:425px) {
+  .snap {
+  left:16.6672vmax;
+  width: 34.7227vmax;
+  }
+}
+
+@media (max-width:375px) {
+  .snap {
+  left:12.6672vmax;
+  width: 34.7227vmax;
+  }
+}
+
+#Capa_1{
+  width: 24.3059vmax;
+  margin-left: 3.47227vmax;
+}
+
+@media (max-width:1024px) {
+  #Capa_1{
+    width: 21.3059vmax;
+    margin-left: 3.47227vmax;
+  }
+}
+
+path{
+  fill : #FFE400;
+}
+
+.diamondMoBa {
+        animation-name: diamondMovesBack;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+        animation-direction: alternate-reverse;
+    }
+    @keyframes diamondMovesBack {
+        0%   { transform: translate(0, 0); }
+        100% { transform: translate(0, 50px); }
+    }
 
 @media (max-width:1024px) {
   .about {
@@ -142,7 +212,7 @@ header {
 }
 
 .about h1 {
-  margin-top: 20.8334vw;
+  margin-top: 24.8334vw;
   font-size: 2.5rem;
   display: inline-block;
 }
@@ -170,7 +240,7 @@ header {
 
 @media (max-width:425px) {
   .about h1 {
-    margin-top: 161px;
+    margin-top: 207px;
     font-size: 42px;
     display: inline-block;
     word-break: keep-all;
@@ -304,7 +374,7 @@ h2 {
   }
 
   .trsf_2 {
-    transform: translateY(-42.0555vh);
+    transform: translateY(-50.0555vh);
   }
 }
 
@@ -314,7 +384,7 @@ h2 {
   }
 
   .trsf_2 {
-    transform: translateY(-41.5555vh);
+    transform: translateY(-49.5555vh);
   }
 }
 
