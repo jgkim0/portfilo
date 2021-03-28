@@ -115,74 +115,80 @@ header {
 }
 
 @media (min-width:1440px) {
-  .about{
-    margin-top: 8.9445vw ;
+  .about {
+    margin-top: 8.9445vw;
     margin-left: 11.41667vw;
     margin-right: 11.41667vw;
   }
 }
 
-.snap{
+.snap {
   position: absolute;
   left: 41.6672vmax;
-/* background: blue; */
+  /* background: blue; */
   width: 34.7227vmax;
   height: 34.7227vmax;
 }
 
 @media (max-width:1024px) {
   .snap {
-  left: 49.6672vmax;
+    left: 49.6672vmax;
   }
 }
 
 @media (max-width:768px) {
   .snap {
-  left: 59.6672vmax;
+    left: 59.6672vmax;
   }
 }
 
 @media (max-width:425px) {
   .snap {
-  left:16.6672vmax;
-  width: 34.7227vmax;
+    left: 16.6672vmax;
+    width: 34.7227vmax;
   }
 }
 
 @media (max-width:375px) {
   .snap {
-  left:12.6672vmax;
-  width: 34.7227vmax;
+    left: 12.6672vmax;
+    width: 34.7227vmax;
   }
 }
 
-#Capa_1{
+#Capa_1 {
   width: 24.3059vmax;
   margin-left: 3.47227vmax;
 }
 
 @media (max-width:1024px) {
-  #Capa_1{
+  #Capa_1 {
     width: 21.3059vmax;
     margin-left: 3.47227vmax;
   }
 }
 
-path{
-  fill : #FFE400;
+path {
+  fill: #FFE400;
 }
 
 .diamondMoBa {
-        animation-name: diamondMovesBack;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        transform-origin: 50% 50%;
-        animation-direction: alternate-reverse;
-    }
-    @keyframes diamondMovesBack {
-        0%   { transform: translate(0, 0); }
-        100% { transform: translate(0, 50px); }
-    }
+  animation-name: diamondMovesBack;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes diamondMovesBack {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 50px);
+  }
+}
 
 @media (max-width:1024px) {
   .about {
@@ -304,11 +310,11 @@ h2 {
   }
 }
 
-  @media (max-width:425px) {
-    .pjlist {
-      margin: 4.77778vmax 0 10.55556vmax;
-    }
+@media (max-width:425px) {
+  .pjlist {
+    margin: 4.77778vmax 0 10.55556vmax;
   }
+}
 
 [class^=frm] {
   width: 100%;
@@ -744,84 +750,65 @@ h2 {
 }
 
 .part2 {
-  width: 75%;
-  margin: 7% 13% 0 13%;
+  width: 88%;
+  margin: 5% 0% 0 10%;
   height: 40.589%;
   /*border: 1px solid red;*/
 }
 
 @media (max-width:768px) {
   .part2 {
-    width: 68%;
-    margin: 7% 13% 0 15%;
+    width: 73%;
+    margin: 5% 0% 0 13%;
   }
 }
 
 @media (max-width:375px) {
   .part2 {
-    width: 80%;
-    margin: 7% 12% 0 10%;
+    width: 88%;
+    margin: 3% 7% 0 7%;
   }
 }
 
-.nametag1 {
-  width: 100%;
-  height: max-content;
-  /*border: 1px solid #FFE400;*/
-  margin-bottom: 0.41667vw;
-  display: flex;
-  background: #f5f5f5;
-  border-radius: 30px 15px 15px 30px;
-}
-
-.iconbox {
-  width: 10%;
-  height: 100%;
-  /*border: 1px solid black;*/
-}
-
-.iconbox img {
+.nametag {
   width: 100%;
   height: auto;
-  object-fit: fill;
-  padding: 8px 6px;
-  background: #FFE400;
-  border-radius: 35px;
+  /*border: 1px solid #FFE400;*/
+  margin-bottom: 0.41667vw;
+  display: flex
 }
 
-.pcomm {
-  font-weight: 400;
-  font-size: 0.93rem;
-  margin: 1.1112vw 0 0 2.63888vw;
+
+.upbtn {
+  width: 101px;
+  height: auto;
+  position: absolute;
+  padding-left: 225px;
+  padding-top: 77px;
 }
 
 @media (max-width:1024px) {
-  .pcomm {
-    font-size: 0.85rem;
-    margin: 11px 0 0 26px;
+  .upbtn {
+    width: 101px;
+    height: auto;
+    padding-left: 161px;
+    padding-top: 52px;
   }
 }
 
 @media (max-width:768px) {
-  .pcomm {
-    font-size: 1.25rem;
-    margin: 17px 0 0 33px;
+  .upbtn {
+    width: 101px;
+    height: auto;
+    padding-left: 254px;
+    padding-top: 52px;
+
+    -webkit-box-ordinal-group: 5;
+      -moz-box-ordinal-group: 5;
+      box-ordinal-group: 5;
   }
 }
 
-@media (max-width:425px) {
-  .pcomm {
-    font-size: 0.98rem;
-    margin: 2vmax 0 0 3.3vmax;
-  }
-}
-
-@media (max-width:375px) {
-  .pcomm {
-    font-size: 0.98rem;
-    margin: 2vmax 0 0 3.3vmax;
-  }
-}
 
 .contbox {
   width: 85%;
@@ -832,6 +819,14 @@ h2 {
   margin-right: auto;
   margin-top: 1.73612vw;
   /*border: 1px solid brown;*/
+}
+
+@media (max-width:768px) {
+  .contbox {
+    -webkit-box-ordinal-group: 3;
+      -moz-box-ordinal-group: 3;
+      box-ordinal-group: 3;
+  }
 }
 
 .container {
@@ -950,8 +945,11 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
-.thxme{
+
+.thxme {
   font-size: 0.8rem;
   color: #7689f5;
 }
+
+
 }
