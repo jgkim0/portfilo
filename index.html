@@ -9,11 +9,13 @@
 
 <body>
   <header>
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="contact form example">
     <!--<a href="https://www.naver.com" target="blank">
       <img src="meme.png" class="logo"></img></a>-->
-    <section class="navi">
+
+    <section class="navi" id="navi">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#container">Project</a></li>
@@ -22,7 +24,7 @@
     </section>
   </header>
 
-  <div class="about">
+  <div class="about" id="about">
     <div class="snap">
       <div class="smile diamondMoBa">
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 467.276 467.276" style="enable-background:new 0 0 467.276 467.276;"
@@ -197,9 +199,9 @@
     <article class="cont">
       <div class="part">
         <div class="part2">
-            <img src="namecard.png" class="nametag"alt="">
+            <img src="namecard.png" class="nametag"alt="" ondragstart="return false">
         </div>
-        <img src="arrow-up.png" alt="" class="upbtn">
+
       </div>
 
       <div class="part">
@@ -230,7 +232,7 @@
           </div>
         </div>
       </div>
-
+        <img src="arrow-up.png" alt="" class="upbtn diamondMoBa1" onclick="window.scrollTo(0,0);"></a>
     </article>
 
   </article>
@@ -241,6 +243,7 @@
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" src="form-submission-handler.js"></script>
   <!-- END -->
+
 </body>
 
 </html>
