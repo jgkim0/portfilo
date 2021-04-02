@@ -736,7 +736,6 @@ h2 {
   height: max-content;
   margin-top: 1.38889vw;
   display: flex;
-  /*border: 1px solid gold;*/
   background: #e8e8e8;
   border-radius: 15px;
 }
@@ -784,6 +783,10 @@ h2 {
   }
 }
 
+.name_div{
+  position: relative;
+}
+
 .nametag {
   width: 100%;
   height: auto;
@@ -792,6 +795,28 @@ h2 {
   display: flex
 }
 
+.mail_div{
+  position: absolute;
+  width: 80%;
+  height: 16%;
+  /*border: 1px solid red;*/
+  bottom: 49%;
+  left: 8%;
+  cursor: pointer;
+
+
+}
+
+.github_div{
+  position: absolute;
+  width: 85%;
+  height: 17%;
+  /*border: 1px solid red;*/
+  bottom: 10%;
+  left: 8%;
+  cursor: pointer;
+  target: _blank;
+}
 
 .upbtn {
   width: 70px;
