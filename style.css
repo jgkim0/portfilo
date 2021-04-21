@@ -75,7 +75,7 @@ header {
   }
 }
 
-@media (max-width:325px) {
+@media (max-width:375px) {
   .navi {
     margin-right: 0px;
     margin-top: 40px;
@@ -119,8 +119,8 @@ header {
 
 /*about-------------------------------*/
 .about {
-  position: relative;
-  height: 60.7223vmax;
+  display: flex;
+  height: 56.7223vmax;
   margin-top: 3.9445vw;
   margin-left: 10.41667vw;
   margin-right: 10.41667vw;
@@ -129,78 +129,8 @@ header {
 @media (min-width:1440px) {
   .about {
     margin-top: 8.9445vw;
-    margin-left: 11.41667vw;
-    margin-right: 11.41667vw;
-  }
-}
-
-.snap {
-  position: absolute;
-  left:  44.6672vmax;
-  width: 27.7227vmax;
-  height: max-content;
-  top: 5em;
-
-}
-
-@media (max-width:1024px) {
-  .snap {
-    left: 49.6672vmax;
-    top: 2em;
-  }
-}
-
-@media (max-width:768px) {
-  .snap {
-    left: 59.6672vmax;
-  }
-}
-
-@media (max-width:425px) {
-  .snap {
-    left: 16.6672vmax;
-    width: 34.7227vmax;
-  }
-}
-
-@media (max-width:375px) {
-  .snap {
-    left: 12.6672vmax;
-    width: 34.7227vmax;
-  }
-}
-
-#Capa_1 {
-  width: 19.3059vmax;
-  margin-left: 3.47227vmax;
-}
-
-@media (max-width:1024px) {
-  #Capa_1 {
-    width: 21.3059vmax;
-    margin-left: 3.47227vmax;
-  }
-}
-
-path {
-  fill: #FFE400;
-}
-
-.diamondMoBa {
-  animation-name: diamondMovesBack;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 50%;
-  animation-direction: alternate-reverse;
-}
-
-@keyframes diamondMovesBack {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  100% {
-    transform: translate(0, 50px);
+    margin-left: 10.41667vw;
+    margin-right: 7.41667vw;
   }
 }
 
@@ -215,7 +145,7 @@ path {
 
 @media (max-width:768px) {
   .about {
-    height: 400px;
+    height: 800px;
     margin-top: 70px;
     margin-left: 75px;
     margin-right: 75px;
@@ -224,15 +154,77 @@ path {
 
 @media (max-width: 425px) {
   .about {
-    height: 460px;
+    height: max-content;
     margin-top: 70px;
     margin-left: 25px;
     margin-right: 25px;
   }
 }
 
+@media (max-width:768px) {
+  .parent_intro{
+    display: -webkit-flex;
+    -webkit-flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media (max-width:425px) {
+  .parent_intro{
+    height: max-content;
+    display: -webkit-flex;
+    -webkit-flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+
+.intro{
+  width: 50%;
+  height: 80%;
+  /*border: 1px blue solid;*/
+  float: left;
+}
+
+.intro-left{
+  width: 55%;
+}
+
+.intro-right{
+  width: 45%;
+}
+
+@media (max-width:1024px) {
+  .intro-left{
+    width: 60%;
+  }
+
+  .intro-right{
+    width: 40%;
+  }
+}
+
+@media (max-width:768px) {
+  .intro-left{
+    width: 87%;
+    height: max-content;
+  }
+
+  .intro-right{
+    width: 80%;
+    height: max-content;
+    transform: translateX(-33px);
+  }
+}
+
+
+
 .about h1 {
-  margin-top: 24.8334vw;
+  margin-top: 14.8334vw;
   font-size: 2.5rem;
   display: inline-block;
 }
@@ -244,15 +236,15 @@ path {
 
 @media (max-width:1024px) {
   .about h1 {
-    margin-top: 200px;
-    font-size: 45px;
+    margin-top: 11.8334vw;
+    font-size: 2.1rem;
     display: inline-block;
   }
 }
 
 @media (max-width:768px) {
   .about h1 {
-    margin-top: 150px;
+    margin-top: 64px;
     font-size: 45px;
     display: inline-block;
   }
@@ -260,7 +252,7 @@ path {
 
 @media (max-width:425px) {
   .about h1 {
-    margin-top: 207px;
+    margin-top: 100px;
     font-size: 42px;
     display: inline-block;
     word-break: keep-all;
@@ -269,18 +261,24 @@ path {
 
 .about p {
   margin-top: 1.38889vw;
-  margin-right: 13.88889vw;
+  /*margin-right: 13.88889vw;*/
   font-size: 1.18em;
   font-weight: 300;
   color: #000;
   word-break: keep-all;
 }
 
+@media (max-width:1024px) {
+  .about p {
+    font-size: 1.1em;
+  }
+}
+
 @media (max-width:768px) {
   .about p {
     margin-top: 20px;
     margin-right: 0px;
-    font-size: 18px;
+    font-size: 1.3rem;
     font-weight: 300;
     color: #000;
     word-break: keep-all;
@@ -297,6 +295,48 @@ h2 {
     font-size: 27px;
   }
 }
+
+#Artwork{
+  width: 117%;
+  height: auto;
+  margin-top: 9vmax;
+}
+
+@media (max-width:1024px) {
+  #Artwork{
+    width: 115%;
+    height: auto;
+    margin-top: 6vmax;
+  }
+}
+
+@media (max-width:425px) {
+  #Artwork{
+    width: 132%;
+    height: auto;
+    margin-top: 6vmax;
+  }
+}
+
+
+.move_art {
+  animation-name: MovesBack;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes MovesBack {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 30px);
+  }
+}
+
 
 /*-----------------------Projects----------------*/
 .project {
@@ -354,20 +394,22 @@ h2 {
   /*border: 1px solid hotpink;*/
 }
 
+
+@media (min-width:1024px) {
+  .reverse{
+    display: -webkit-flex;
+    -webkit-flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
 @media (max-width:768px) {
   .nemo {
     margin-left: 25px;
     width: 85%;
     height: 100%;
     /*border: 1px solid hotpink;*/
-  }
-
-  .trsf_1 {
-    transform: translateY(58.9791vh);
-  }
-
-  .trsf_2 {
-    transform: translateY(-51.0555vh);
   }
 }
 
@@ -378,35 +420,8 @@ h2 {
     height: 100%;
     /*border: 1px solid hotpink;*/
   }
-
-  .trsf_1 {
-    transform: translateY(43.9791vh);
-  }
-
-  .trsf_2 {
-    transform: translateY(-42.0555vh);
-  }
 }
 
-@media (max-width:375px) {
-  .trsf_1 {
-    transform: translateY(38.9791vh);
-  }
-
-  .trsf_2 {
-    transform: translateY(-50.0555vh);
-  }
-}
-
-@media (max-width:325px) {
-  .trsf_1 {
-    transform: translateY(34.9791vh);
-  }
-
-  .trsf_2 {
-    transform: translateY(-49.5555vh);
-  }
-}
 
 .projimg {
   width: 100%;
@@ -420,7 +435,7 @@ h2 {
 .explain {
   width: 100%;
   height: 100%;
-  margin: 5.03473vw 0px 5.03473vw 0;
+  margin: 3.03473vw 0px 5.03473vw 0;
   /*border: 1px solid blue;*/
 }
 
@@ -430,7 +445,7 @@ h2 {
 
 @media (max-width:1024px) {
   .explain {
-    margin: 5.03473vw 0px 5.03473vw 0;
+    margin: 3.03473vw 0px 5.03473vw 0;
     /*border: 1px solid blue;*/
   }
 }
@@ -468,7 +483,7 @@ h2 {
   }
 }
 
-@media (max-width:325px) {
+@media (max-width:375px) {
   .explain {
     margin: 5.03473vw 0px 5.03473vw 1vh;
     /*border: 1px solid blue;*/
@@ -489,7 +504,7 @@ h2 {
   width: max-content;
   height: max-content;
   display: block;
-  margin: 5px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 0 7px;
   font-size: 1.4rem;
   font-weight: 500;
@@ -518,7 +533,7 @@ h2 {
 
 @media (max-width:1024px) {
   .datep {
-    margin: 19.5px 0px 0px 15px;
+    margin: 17.5px 0px 0px 10px;
   }
 }
 
@@ -528,10 +543,16 @@ h2 {
   }
 }
 
-@media (max-width:325px) {
+@media (max-width:375px) {
   .datep {
     font-size: 0.89rem;
-    margin: 6.35416vw 0px 0px 0.69445vw;
+    margin: 4.35416vw 0px 0px 1.69445vw;
+  }
+}
+
+@media (max-width:425px) {
+  .datep_br {
+    margin: 2.35416vw 0px 3.5vw 0.69445vw;
   }
 }
 
@@ -540,14 +561,14 @@ h2 {
   height: max-content;
   margin: 1.38889vw 0.34723vw 0.8vw 0px;
   word-break: keep-all;
-  line-height: 110%;
+  line-height: 126%;
   font-size: 0.91rem;
   clear: both;
 }
 
 @media (max-width:768px) {
   .explic {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 2.08889vmax 0.34723vmax 1vmax 0px;
     line-height: 140%;
   }
@@ -564,21 +585,28 @@ h2 {
   font-size: 0.85rem;
 }
 
+@media (max-width:425px) {
+  .lng {
+    font-size: 0.95rem;
+
+  }
+}
+
 .ghicon {
   height: auto;
   width: 25px;
-  margin: 7px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 }
 
 /* --------------------skill & tools-----------------*/
-#container {
+#Container {
   margin-left: 10.41667vw;
   margin-right: 10.41667vw;
   margin-bottom: 0.69445vw;
 }
 
 @media (max-width: 1024px) {
-  #container {
+  #Container {
     margin-left: 6.55555vw;
     margin-right: 6.55555vw;
     margin-bottom: 10px;
@@ -586,7 +614,7 @@ h2 {
 }
 
 @media (max-width:768px) {
-  #container {
+  #Container {
     margin-left: 100px;
     margin-right: 50px;
     margin-bottom: 10px;
@@ -594,7 +622,7 @@ h2 {
 }
 
 @media (max-width: 425px) {
-  #container {
+  #Container {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -602,14 +630,14 @@ h2 {
 }
 
 @media (max-width: 320px) {
-  #container {
+  #Container {
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 10px;
   }
 }
 
-#container #sk {
+#Container #sk {
   display: flex;
   width: 100%;
   height: max-content;
@@ -617,7 +645,7 @@ h2 {
 }
 
 @media (max-width:768px) {
-  #container #sk {
+  #Container #sk {
     display: block;
   }
 }
@@ -673,7 +701,7 @@ h2 {
 
 @media (max-width:768px) {
   .incon .xshead {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -687,7 +715,7 @@ h2 {
 
 @media (max-width:768px) {
   .incon .desc {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 }
 
@@ -795,6 +823,20 @@ h2 {
   display: flex
 }
 
+@media (max-width:425px) {
+  .nametag {
+    width: 122%;
+    transform: translateX(-26px);
+  }
+}
+
+@media (max-width: 375px) {
+  .nametag {
+    width: 104%;
+    transform: translateX(-6px);
+  }
+}
+
 .mail_div{
   position: absolute;
   width: 80%;
@@ -815,7 +857,6 @@ h2 {
   bottom: 10%;
   left: 8%;
   cursor: pointer;
-  target: _blank;
 }
 
 .upbtn {
@@ -881,11 +922,11 @@ h2 {
 
 .diamondMoBa1 {
   animation-name: diamondMovesBack;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
   animation-direction: alternate-reverse;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 @keyframes diamondMovesBack {
@@ -894,7 +935,7 @@ h2 {
   }
 
   100% {
-    transform: translate(0, 8px);
+    transform: translate(0, 20px);
   }
 }
 
@@ -929,6 +970,12 @@ img.upbtn.diamondMoBa1:hover{
 @media (min-width:1440px) {
   .contbox {
     margin-right: 5px;
+}
+}
+
+@media (max-width:375px) {
+  .contbox {
+    width:93%;
 }
 }
 
@@ -991,6 +1038,14 @@ img.upbtn.diamondMoBa1:hover{
   }
 }
 
+@media (max-width:375px) {
+  #gform {
+    padding: 49px 24px 27px 20px;
+    border-radius: 66px;
+    border: 2px solid black;
+  }
+}
+
 #gform h3 {
   color: #F96;
   display: block;
@@ -1012,6 +1067,12 @@ fieldset {
   width: 100%;
 }
 
+@media (max-width:425px) {
+  fieldset {
+    margin: 0 0px 1px;
+  }
+}
+
 #gform input[type="text"], #gform input[type="email"], #gform textarea {
   width: 94%;
   border: 1px solid #CCC;
@@ -1020,12 +1081,16 @@ fieldset {
   padding: 10px;
 }
 
+
+
 #gform input[type="text"]:hover, #gform input[type="email"]:hover, #gform textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #AAA;
 }
+
+
 
 /*#contact input[type="text"]:focus, #contact input[type="email"]:focus,  #contact textarea:focus {
 
@@ -1036,6 +1101,10 @@ fieldset {
   height: 100px;
   max-width: 100%;
   resize: none;
+}
+
+#gform textarea {
+  resize: vertical;
 }
 
 #gform button {
