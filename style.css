@@ -422,7 +422,7 @@ h2 {
   display: block;
   margin: 0px 0px 0px 0px;
   padding: 1px 4px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
   float: left;
   background: linear-gradient(to bottom, #FFE400 100%, transparent 50%);
@@ -1144,7 +1144,7 @@ fieldset {
       order: 2;
     }
     .part1{
-     height: 240px;
+     height: 260px;
      width: 78%;
      margin-bottom: 3%;
      order : 1;
@@ -1168,7 +1168,7 @@ fieldset {
       margin: 0 0px 1px;
     }
     .part1{
-      height: 39vmax;
+      height: 260px;
       width: 103%;
     }
     .part3{
@@ -1188,7 +1188,7 @@ fieldset {
     padding: 34px 30px 20px 27px;
   }
   .part1{
-    height: 39vmax;
+    height: 260px;
     width: 114%;
   }
   .upbtndiv img{
